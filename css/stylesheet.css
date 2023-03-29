@@ -118,6 +118,7 @@ img {
 }
 
 
+
 @media screen and (max-width:600px) {
     body{
         display: grid;
@@ -143,4 +144,14 @@ img {
         margin:.5em
     }
 
+}
+
+/* Assignment 2 additions */
+
+.darkThemeAside{
+    background-color: darkblue
+}
+
+.darkThemeMain {
+    background-color: darkmagenta
 }
