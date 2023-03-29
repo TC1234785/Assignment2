@@ -1,0 +1,146 @@
+html {
+    color: #256993;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    display: flex;
+    height:98vh;
+    margin: 0;
+    background-color: #F3E9DE;
+}
+
+header{
+    display:grid;
+    grid-template-rows:2fr 1fr;
+}
+
+h1 {
+    display:flex;
+    justify-content: center;
+}
+
+aside{
+    height:100vh;
+    flex-grow:1;
+    background-color: #FAF4EC;
+}
+
+aside>h2 {
+    display:flex;
+    justify-content: center;
+}
+
+.main_container {
+    flex-grow:4;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display:flex;
+    justify-content: end;
+    gap: 1em;
+    padding-right: 1.75em;
+}
+
+.navbar > a {
+    text-decoration:none;
+}
+
+button {
+    background-color: #375F68;
+    color:white;
+    border-style:none;
+    padding:.75rem;
+    border-radius: .5rem;
+
+}
+
+.top_buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: .75em 1em
+}
+
+#Dark_Theme {
+    background-color: #56536A;
+}
+
+.textbox {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#note {
+    grid-column:1/-1;    
+    height: 10rem;
+    border-color: #4E8CE5;
+    border-width: .2em;
+    background-color: #FAF4EC;
+    border-radius: .5em;
+    margin: 1em
+
+}
+
+.bottom_buttons {
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+    padding: 0em 1em;
+}
+
+#Cancel {
+    background-color: #9B332C;
+}
+
+footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+h3 {
+    display:flex;
+    grid-column:1/-1;
+    justify-content:center
+}
+
+.linkedin{
+    display:flex;
+    justify-content: end;
+}
+
+img {
+    height: 3rem;
+    width: 3rem;
+}
+
+
+@media screen and (max-width:600px) {
+    body{
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+    }
+
+    aside{
+        height: 100%
+    }
+
+    .top_buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0em 1em
+    }
+
+    h3 {
+        margin: 0em;
+        align-self: center;
+    }
+
+    h2{
+        margin:.5em
+    }
+
+}
