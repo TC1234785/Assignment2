@@ -149,9 +149,13 @@ img {
 /* Assignment 2 additions */
 
 .darkThemeAside{
-    background-color: darkblue
+    background-color: #616161
 }
 
 .darkThemeMain {
-    background-color: darkmagenta
+    background-color: #3c3c3c
+}
+
+.darkThemeText {
+    color:white
 }
