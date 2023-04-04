@@ -26,7 +26,15 @@ function cancelButton()
 }
 buttonCancel.addEventListener('click', cancelButton)
 
-
-
+/* New Note functionality */
+const newNoteButton = document.querySelector("#New_Note")
+const textAreaPlaceholder = document.querySelector("#note")
+function newNote()
+{
+    document.querySelector('.bottom_buttons').classList.remove("hidden");
+    document.querySelector('#note').classList.remove("hidden");
+    textAreaPlaceholder.value = "";
+}
+newNoteButton.addEventListener('click', newNote)
 
 
