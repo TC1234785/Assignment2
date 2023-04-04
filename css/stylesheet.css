@@ -155,3 +155,7 @@ img {
 .darkThemeText {
     color:white
 }
+
+.hidden {
+    display: none
+}
