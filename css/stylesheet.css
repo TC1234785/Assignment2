@@ -45,10 +45,6 @@ aside>h2 {
     padding-right: 1.75em;
 }
 
-.navbar > a {
-    text-decoration:none;
-}
-
 button {
     background-color: #375F68;
     color:white;
@@ -73,7 +69,7 @@ button {
     grid-template-columns: 1fr 1fr;
 }
 
-#note {
+.note {
     grid-column:1/-1;    
     height: 10rem;
     border-color: #4E8CE5;
@@ -118,6 +114,7 @@ img {
 }
 
 
+
 @media screen and (max-width:600px) {
     body{
         display: grid;
@@ -143,4 +140,27 @@ img {
         margin:.5em
     }
 
+}
+
+/* Assignment 2 additions */
+
+.darkThemeAside{
+    background-color: #616161;
+    color:white
+}
+.darkThemeAside::placeholder{
+    color:white
+    
+}
+
+.darkThemeMain {
+    background-color: #3c3c3c
+}
+
+.darkThemeText {
+    color:white
+}
+
+.hidden {
+    display: none
 }
