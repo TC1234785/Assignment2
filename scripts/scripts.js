@@ -11,8 +11,6 @@ const newLi = document.createElement('li')
 const userText = document.querySelector('textarea')
 const listNotes = document.querySelector('ul')
 
-
-
 /*Declare notesArray*/
 const notesArray = [{title:"note one", body:"this is my first note"}, {title:"note two", body:"this is my second note"}]
 
@@ -74,3 +72,13 @@ function saveNote(){
 }
 saveButton.addEventListener('click', saveNote)
 
+/*Opening notes in sidebar*/
+
+function openNote(event){
+    for (let listedNote of notesArray)
+        if (event.target.textContent.trim() === listedNote.title){
+            note.value = listedNote.body
+        }
+    }
+
+listNotes.addEventListener('click', openNote)
